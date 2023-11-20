@@ -15,4 +15,4 @@ jobs:
          cmd /c down.bat
 
       - name: game Counter
-        run: python time.py
+        run: python game.ps
